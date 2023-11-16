@@ -1,8 +1,8 @@
-package ru.backend.storages;
+package com.javawhizz.App.storages;
 
+import com.javawhizz.App.models.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import ru.backend.models.User;
 
 import java.util.*;
 

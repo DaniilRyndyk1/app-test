@@ -1,4 +1,4 @@
-package ru.backend.jwt;
+package com.javawhizz.App.jwt;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

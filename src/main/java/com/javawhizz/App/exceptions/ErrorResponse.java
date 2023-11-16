@@ -1,4 +1,4 @@
-package ru.backend.exceptions;
+package com.javawhizz.App.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,16 +1,15 @@
-package ru.backend.controllers;
+package com.javawhizz.App.controllers;
 
+import com.javawhizz.App.exceptions.ValidationException;
+import com.javawhizz.App.jwt.JwtRequest;
+import com.javawhizz.App.jwt.JwtResponse;
+import com.javawhizz.App.models.User;
+import com.javawhizz.App.services.AuthService;
+import com.javawhizz.App.services.UserService;
+import jakarta.security.auth.message.AuthException;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.backend.exceptions.ValidationException;
-import ru.backend.jwt.JwtRequest;
-import ru.backend.jwt.JwtResponse;
-import ru.backend.models.User;
-import ru.backend.services.AuthService;
-import ru.backend.services.UserService;
-
-import javax.security.auth.message.AuthException;
 
 @RestController
 @AllArgsConstructor

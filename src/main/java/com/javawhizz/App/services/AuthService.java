@@ -1,14 +1,15 @@
-package ru.backend.services;
+package com.javawhizz.App.services;
 
+import com.javawhizz.App.jwt.JwtProvider;
+import com.javawhizz.App.jwt.JwtRequest;
+import com.javawhizz.App.jwt.JwtResponse;
+import com.javawhizz.App.models.User;
+import jakarta.security.auth.message.AuthException;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.backend.jwt.JwtProvider;
-import ru.backend.jwt.JwtRequest;
-import ru.backend.jwt.JwtResponse;
-import ru.backend.models.User;
 
-import javax.security.auth.message.AuthException;
+
 import java.util.HashMap;
 import java.util.Map;
 

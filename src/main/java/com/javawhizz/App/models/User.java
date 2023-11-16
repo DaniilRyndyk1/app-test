@@ -1,4 +1,4 @@
-package ru.backend.models;
+package com.javawhizz.App.models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

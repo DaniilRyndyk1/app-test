@@ -1,13 +1,13 @@
-package ru.backend.controllers;
+package com.javawhizz.App.controllers;
 
+import com.javawhizz.App.models.User;
+import com.javawhizz.App.services.AuthService;
+import com.javawhizz.App.services.UserService;
+import jakarta.security.auth.message.AuthException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import ru.backend.models.User;
-import ru.backend.services.AuthService;
-import ru.backend.services.UserService;
 
-import javax.security.auth.message.AuthException;
 import java.util.List;
 
 @RestController("api")
@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping
 @AllArgsConstructor
 @CrossOrigin(origins = "*")
-public class UserController{
+public class UserController {
 
     private final AuthService authService;
     private final UserService userService;

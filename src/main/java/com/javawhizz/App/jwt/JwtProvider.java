@@ -1,5 +1,6 @@
-package ru.backend.jwt;
+package com.javawhizz.App.jwt;
 
+import com.javawhizz.App.models.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
@@ -8,7 +9,6 @@ import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import ru.backend.models.User;
 
 import javax.crypto.SecretKey;
 import java.security.Key;

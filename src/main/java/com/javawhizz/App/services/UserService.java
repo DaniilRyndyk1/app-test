@@ -1,12 +1,12 @@
-package ru.backend.services;
+package com.javawhizz.App.services;
 
+import com.javawhizz.App.models.User;
+import com.javawhizz.App.storages.UserStorage;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import ru.backend.models.User;
-import ru.backend.storages.UserStorage;
 
 import java.util.HashSet;
 import java.util.List;

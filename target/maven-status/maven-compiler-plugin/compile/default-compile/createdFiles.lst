@@ -1,0 +1,13 @@
+com\javawhizz\App\controllers\AuthController.class
+com\javawhizz\App\exceptions\ErrorHandler.class
+com\javawhizz\App\AppApplication.class
+com\javawhizz\App\controllers\UserController.class
+com\javawhizz\App\services\AuthService.class
+com\javawhizz\App\jwt\JwtRequest.class
+com\javawhizz\App\storages\UserStorage.class
+com\javawhizz\App\jwt\JwtResponse.class
+com\javawhizz\App\exceptions\ErrorResponse.class
+com\javawhizz\App\models\User.class
+com\javawhizz\App\services\UserService.class
+com\javawhizz\App\jwt\JwtProvider.class
+com\javawhizz\App\exceptions\ValidationException.class
