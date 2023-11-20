@@ -32,6 +32,7 @@ public class AuthController {
 
     @PostMapping("register")
     @ResponseStatus(HttpStatus.CREATED)
+    @CrossOrigin(origins = "*")
     public User register(@RequestBody User user) {
         validate(user);
         return userService.add(user);
