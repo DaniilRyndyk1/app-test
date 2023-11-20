@@ -8,24 +8,15 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@EnableWebSecurity
-public class SpringSecurityConfig extends WebSecurityConfigurerAdapter implements WebMvcConfigurer {
-
+public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebMvcConfigurer {
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.cors()
-            .and()
-            .csrf()
-            .disable()
-            .authorizeRequests()
-            .anyRequest()
-            .permitAll();
+    public void configure(HttpSecurity http) throws Exception {
+        http.authorizeRequests().antMatchers("/**").permitAll();
     }
-
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("http://localhost:4200")
                 .allowedMethods("*");
     }
 }
