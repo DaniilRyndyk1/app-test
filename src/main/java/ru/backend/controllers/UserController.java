@@ -14,7 +14,6 @@ import java.util.List;
 @Slf4j
 @RequestMapping
 @AllArgsConstructor
-@CrossOrigin(origins = "*")
 public class UserController{
 
     private final AuthService authService;

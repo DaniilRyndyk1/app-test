@@ -14,13 +14,11 @@ import javax.security.auth.message.AuthException;
 
 @RestController
 @AllArgsConstructor
-@CrossOrigin(origins = "*")
 public class AuthController {
     private final AuthService authService;
     private final UserService userService;
 
     @PostMapping("login")
-    @CrossOrigin(origins = "*")
     public JwtResponse login(@RequestBody JwtRequest request) throws AuthException {
         return authService.login(request);
     }
@@ -32,7 +30,6 @@ public class AuthController {
 
     @PostMapping("register")
     @ResponseStatus(HttpStatus.CREATED)
-    @CrossOrigin(origins = "*")
     public User register(@RequestBody User user) {
         validate(user);
         return userService.add(user);
